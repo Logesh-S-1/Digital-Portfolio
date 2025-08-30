@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi, I'm <strong>LOGESH S</strong>. A passionate learner and developer.</p>
+        <button onclick="scrollToSection('contact')">Hire Me</button>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>I am a student passionate about technology, coding, and learning new skills. This portfolio highlights my journey and work.</p>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, C, Java</li>
+            <li>Responsive Web Design</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+            <h3>Todo App</h3>
+            <p>A simple task management app using JavaScript.</p>
+        </div>
+    </section>
+
+    <section id="certifications" class="section certifications">
+        <h2>Certifications</h2>
+        <p>Certified in Web Development, Python Programming, and Data Science.</p>
+    </section>
+
+    <section id="education" class="section education">
+        <h2>Education</h2>
+        <p>SSLC & HSC - Government Boys Higher Secondary School, Arni (2021-24)</p>
+        <p>BCA - Dr. M. G. R. Chockalingam Arts College (2024-27)</p>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formStatus"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
